@@ -1,5 +1,5 @@
 {
-  "kind": "collectionType",
+  "kind": "singleType",
   "collectionName": "home_pages",
   "info": {
     "singularName": "home-page",
@@ -20,7 +20,8 @@
     "blocks": {
       "type": "dynamiczone",
       "components": [
-        "layout.hero-section"
+        "layout.hero-section",
+        "layout.features-section"
       ]
     }
   }
