@@ -17,8 +17,6 @@ export default (config, { strapi }: { strapi: Core.Strapi }) => {
     if (availableCredits === 0)
       return ctx.unauthorized("You do not have enough credits.");
 
-    console.log("############ Inside middleware end #############");
-
     // ADD THE AUTHOR ID TO THE BODY
     const modifiedBody = {
       ...ctx.request.body,
@@ -43,7 +41,5 @@ export default (config, { strapi }: { strapi: Core.Strapi }) => {
     } catch (error) {
       ctx.badRequest("Error Updating User Credits");
     }
-
-    console.log("############ Inside middleware end #############");
   };
 };
